@@ -1,0 +1,40 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{%import '_modules/nav/nav.nunjucks' as nav%}
+{%import '_modules/pais/pais.nunjucks' as pais%}
+  {{ pais.content({
+    nombre: val.nombre,
+    poblacion: val.poblacion,
+    img: val.bandera
+  })}}
+
+
+
+{% block content %}
+
+  <h1>
+    {{ site.data.ejemplo.paises.pais[0].nombre }}
+  </h1>
+  <!-- muestro el li por cada pais -->
+    <ul> 
+  {% for val in site.data.ejemplo.paises.pais %}
+    <li><h2>{{ val.nombre }}</h2>
+        <img src="../images/{{val.bandera}}" alt="">
+    
+    
+    </li>
+  {% endfor %}
+  </ul>
+
+
+  {{nav.content({
+    class: "rojo",
+    texto: "hola, estoy usando modulos.",
+    super:true
+  })}}
+
+    <a href="contacto">ir a contacto papi</a>
+   
+    <img src="../images/gatito3.jpg" alt="gato en bolw">
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{
+	"global": {
+		"lang": "en",
+		"titleTag": "Website title",
+		"description": "Description"
+    },    
+	"hero": {
+		"title": "Hero title",
+		"text": "Super duper Potter ipsum text in English"
+    }
+}

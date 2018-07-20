@@ -1,0 +1,18 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<div>
+  <h2>{{ spec.nombre }}</h2>
+  <p>poblacion: {{ spec.poblacion }}</p>
+  <img src="images/URL" alt="">
+
+
+  {% if spec.mayor %}
+    ESTO ES SUPER!
+
+  {% endif %}
+
+</div>
+{% endmacro %}

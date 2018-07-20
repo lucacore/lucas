@@ -1,0 +1,11 @@
+{
+	"global": {
+		"lang": "es",
+		"titleTag": "Título del sitio",
+		"description": "Descripción"
+    },    
+	"hero": {
+		"title": "Título del hero",
+		"text": "Super texto copado de Potter ipsum en español"
+    }
+}
